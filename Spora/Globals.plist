@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SPORA_MSG_API</key>
+	<string>/messages</string>
+	<key>SEND_MSG_SERVICE</key>
+	<string>/messages</string>
+	<key>BASE_URL</key>
+	<string>http://pure-shelf-2295.herokuapp.com</string>
+	<key>GET_MSGS_SERVICE</key>
+	<string>/messages</string>
+</dict>
+</plist>

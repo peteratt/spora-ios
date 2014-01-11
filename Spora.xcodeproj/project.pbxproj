@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C6FCEC717316E0F007D5715 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6FCEC617316E0F007D5715 /* SystemConfiguration.framework */; };
+		8C6FCEC917316E14007D5715 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6FCEC817316E14007D5715 /* MobileCoreServices.framework */; };
+		8C7ACA041733164200B87FE1 /* SPMessageList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7ACA031733164200B87FE1 /* SPMessageList.m */; };
+		8C7ACA071733167800B87FE1 /* SPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7ACA061733167800B87FE1 /* SPMessage.m */; };
+		8C7ACA0A173317EF00B87FE1 /* SPJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7ACA09173317EF00B87FE1 /* SPJSONParser.m */; };
+		8CB6D254171BA8C1008B6F2C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB6D252171BA87D008B6F2C /* CoreLocation.framework */; };
+		8CB6D257171BA992008B6F2C /* SPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB6D256171BA992008B6F2C /* SPLocationManager.m */; };
+		8CB6D258171BA992008B6F2C /* SPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB6D256171BA992008B6F2C /* SPLocationManager.m */; };
+		8CF75ED5171B86CA00B459FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF75ED4171B86CA00B459FD /* UIKit.framework */; };
+		8CF75ED7171B86CA00B459FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF75ED6171B86CA00B459FD /* Foundation.framework */; };
+		8CF75ED9171B86CA00B459FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF75ED8171B86CA00B459FD /* CoreGraphics.framework */; };
+		8CF75EDF171B86CA00B459FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CF75EDD171B86CA00B459FD /* InfoPlist.strings */; };
+		8CF75EE1171B86CA00B459FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75EE0171B86CA00B459FD /* main.m */; };
+		8CF75EE5171B86CA00B459FD /* SPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75EE4171B86CA00B459FD /* SPAppDelegate.m */; };
+		8CF75EE7171B86CA00B459FD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF75EE6171B86CA00B459FD /* Default.png */; };
+		8CF75EE9171B86CA00B459FD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF75EE8171B86CA00B459FD /* Default@2x.png */; };
+		8CF75EEB171B86CA00B459FD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF75EEA171B86CA00B459FD /* Default-568h@2x.png */; };
+		8CF75EEE171B86CA00B459FD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF75EEC171B86CA00B459FD /* MainStoryboard.storyboard */; };
+		8CF75EF1171B86CA00B459FD /* SPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75EF0171B86CA00B459FD /* SPViewController.m */; };
+		8CF75EF9171B86CB00B459FD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF75EF8171B86CB00B459FD /* SenTestingKit.framework */; };
+		8CF75EFA171B86CB00B459FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF75ED4171B86CA00B459FD /* UIKit.framework */; };
+		8CF75EFB171B86CB00B459FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF75ED6171B86CA00B459FD /* Foundation.framework */; };
+		8CF75F03171B86CB00B459FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CF75F01171B86CB00B459FD /* InfoPlist.strings */; };
+		8CF75F06171B86CB00B459FD /* SporaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F05171B86CB00B459FD /* SporaTests.m */; };
+		8CF75F12171B8BB000B459FD /* SPConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F11171B8BB000B459FD /* SPConnectionManager.m */; };
+		8CF75F14171B8CDF00B459FD /* Globals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CF75F13171B8CDF00B459FD /* Globals.plist */; };
+		8CF75F17171B8D6E00B459FD /* SPConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F16171B8D6E00B459FD /* SPConstant.m */; };
+		8CF75F2C171B90B500B459FD /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F1A171B90B500B459FD /* AFHTTPClient.m */; };
+		8CF75F2D171B90B500B459FD /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F1A171B90B500B459FD /* AFHTTPClient.m */; };
+		8CF75F2E171B90B500B459FD /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F1C171B90B500B459FD /* AFHTTPRequestOperation.m */; };
+		8CF75F2F171B90B500B459FD /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F1C171B90B500B459FD /* AFHTTPRequestOperation.m */; };
+		8CF75F30171B90B500B459FD /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F1E171B90B500B459FD /* AFImageRequestOperation.m */; };
+		8CF75F31171B90B500B459FD /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F1E171B90B500B459FD /* AFImageRequestOperation.m */; };
+		8CF75F32171B90B500B459FD /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F20171B90B500B459FD /* AFJSONRequestOperation.m */; };
+		8CF75F33171B90B500B459FD /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F20171B90B500B459FD /* AFJSONRequestOperation.m */; };
+		8CF75F34171B90B500B459FD /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F22171B90B500B459FD /* AFNetworkActivityIndicatorManager.m */; };
+		8CF75F35171B90B500B459FD /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F22171B90B500B459FD /* AFNetworkActivityIndicatorManager.m */; };
+		8CF75F36171B90B500B459FD /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F25171B90B500B459FD /* AFPropertyListRequestOperation.m */; };
+		8CF75F37171B90B500B459FD /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F25171B90B500B459FD /* AFPropertyListRequestOperation.m */; };
+		8CF75F38171B90B500B459FD /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F27171B90B500B459FD /* AFURLConnectionOperation.m */; };
+		8CF75F39171B90B500B459FD /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F27171B90B500B459FD /* AFURLConnectionOperation.m */; };
+		8CF75F3A171B90B500B459FD /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F29171B90B500B459FD /* AFXMLRequestOperation.m */; };
+		8CF75F3B171B90B500B459FD /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F29171B90B500B459FD /* AFXMLRequestOperation.m */; };
+		8CF75F3C171B90B500B459FD /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F2B171B90B500B459FD /* UIImageView+AFNetworking.m */; };
+		8CF75F3D171B90B500B459FD /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75F2B171B90B500B459FD /* UIImageView+AFNetworking.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CF75EFC171B86CB00B459FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CF75EC9171B86CA00B459FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CF75ED0171B86CA00B459FD;
+			remoteInfo = Spora;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C6FCEC617316E0F007D5715 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8C6FCEC817316E14007D5715 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8C7ACA021733164200B87FE1 /* SPMessageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPMessageList.h; path = Model/SPMessageList.h; sourceTree = "<group>"; };
+		8C7ACA031733164200B87FE1 /* SPMessageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPMessageList.m; path = Model/SPMessageList.m; sourceTree = "<group>"; };
+		8C7ACA051733167800B87FE1 /* SPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPMessage.h; path = Model/SPMessage.h; sourceTree = "<group>"; };
+		8C7ACA061733167800B87FE1 /* SPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPMessage.m; path = Model/SPMessage.m; sourceTree = "<group>"; };
+		8C7ACA08173317EF00B87FE1 /* SPJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPJSONParser.h; path = Core/SPJSONParser.h; sourceTree = "<group>"; };
+		8C7ACA09173317EF00B87FE1 /* SPJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPJSONParser.m; path = Core/SPJSONParser.m; sourceTree = "<group>"; };
+		8CB6D252171BA87D008B6F2C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8CB6D255171BA992008B6F2C /* SPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPLocationManager.h; path = Core/SPLocationManager.h; sourceTree = "<group>"; };
+		8CB6D256171BA992008B6F2C /* SPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPLocationManager.m; path = Core/SPLocationManager.m; sourceTree = "<group>"; };
+		8CF75ED1171B86CA00B459FD /* Spora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF75ED4171B86CA00B459FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8CF75ED6171B86CA00B459FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8CF75ED8171B86CA00B459FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8CF75EDC171B86CA00B459FD /* Spora-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Spora-Info.plist"; sourceTree = "<group>"; };
+		8CF75EDE171B86CA00B459FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8CF75EE0171B86CA00B459FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CF75EE2171B86CA00B459FD /* Spora-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spora-Prefix.pch"; sourceTree = "<group>"; };
+		8CF75EE3171B86CA00B459FD /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
+		8CF75EE4171B86CA00B459FD /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
+		8CF75EE6171B86CA00B459FD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8CF75EE8171B86CA00B459FD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8CF75EEA171B86CA00B459FD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8CF75EED171B86CA00B459FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8CF75EEF171B86CA00B459FD /* SPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPViewController.h; sourceTree = "<group>"; };
+		8CF75EF0171B86CA00B459FD /* SPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPViewController.m; sourceTree = "<group>"; };
+		8CF75EF7171B86CB00B459FD /* SporaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SporaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF75EF8171B86CB00B459FD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8CF75F00171B86CB00B459FD /* SporaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SporaTests-Info.plist"; sourceTree = "<group>"; };
+		8CF75F02171B86CB00B459FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8CF75F04171B86CB00B459FD /* SporaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SporaTests.h; sourceTree = "<group>"; };
+		8CF75F05171B86CB00B459FD /* SporaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SporaTests.m; sourceTree = "<group>"; };
+		8CF75F10171B8BB000B459FD /* SPConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPConnectionManager.h; path = Core/SPConnectionManager.h; sourceTree = "<group>"; };
+		8CF75F11171B8BB000B459FD /* SPConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPConnectionManager.m; path = Core/SPConnectionManager.m; sourceTree = "<group>"; };
+		8CF75F13171B8CDF00B459FD /* Globals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Globals.plist; sourceTree = "<group>"; };
+		8CF75F15171B8D6E00B459FD /* SPConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPConstant.h; sourceTree = "<group>"; };
+		8CF75F16171B8D6E00B459FD /* SPConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPConstant.m; sourceTree = "<group>"; };
+		8CF75F19171B90B500B459FD /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		8CF75F1A171B90B500B459FD /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		8CF75F1B171B90B500B459FD /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		8CF75F1C171B90B500B459FD /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		8CF75F1D171B90B500B459FD /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		8CF75F1E171B90B500B459FD /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		8CF75F1F171B90B500B459FD /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		8CF75F20171B90B500B459FD /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		8CF75F21171B90B500B459FD /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		8CF75F22171B90B500B459FD /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		8CF75F23171B90B500B459FD /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		8CF75F24171B90B500B459FD /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		8CF75F25171B90B500B459FD /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		8CF75F26171B90B500B459FD /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		8CF75F27171B90B500B459FD /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		8CF75F28171B90B500B459FD /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		8CF75F29171B90B500B459FD /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		8CF75F2A171B90B500B459FD /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		8CF75F2B171B90B500B459FD /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CF75ECE171B86CA00B459FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6FCEC917316E14007D5715 /* MobileCoreServices.framework in Frameworks */,
+				8C6FCEC717316E0F007D5715 /* SystemConfiguration.framework in Frameworks */,
+				8CB6D254171BA8C1008B6F2C /* CoreLocation.framework in Frameworks */,
+				8CF75ED5171B86CA00B459FD /* UIKit.framework in Frameworks */,
+				8CF75ED7171B86CA00B459FD /* Foundation.framework in Frameworks */,
+				8CF75ED9171B86CA00B459FD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF75EF3171B86CB00B459FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF75EF9171B86CB00B459FD /* SenTestingKit.framework in Frameworks */,
+				8CF75EFA171B86CB00B459FD /* UIKit.framework in Frameworks */,
+				8CF75EFB171B86CB00B459FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C7ACA001732F6D200B87FE1 /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				8CF75F18171B90B500B459FD /* AFNetworking */,
+			);
+			name = "External Libraries";
+			sourceTree = "<group>";
+		};
+		8C7ACA011732FCC800B87FE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C7ACA021733164200B87FE1 /* SPMessageList.h */,
+				8C7ACA031733164200B87FE1 /* SPMessageList.m */,
+				8C7ACA051733167800B87FE1 /* SPMessage.h */,
+				8C7ACA061733167800B87FE1 /* SPMessage.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8CF75EC8171B86CA00B459FD = {
+			isa = PBXGroup;
+			children = (
+				8CF75EDA171B86CA00B459FD /* Spora */,
+				8CF75EFE171B86CB00B459FD /* SporaTests */,
+				8CF75ED3171B86CA00B459FD /* Frameworks */,
+				8CF75ED2171B86CA00B459FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CF75ED2171B86CA00B459FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CF75ED1171B86CA00B459FD /* Spora.app */,
+				8CF75EF7171B86CB00B459FD /* SporaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CF75ED3171B86CA00B459FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C6FCEC817316E14007D5715 /* MobileCoreServices.framework */,
+				8C6FCEC617316E0F007D5715 /* SystemConfiguration.framework */,
+				8CB6D252171BA87D008B6F2C /* CoreLocation.framework */,
+				8CF75ED4171B86CA00B459FD /* UIKit.framework */,
+				8CF75ED6171B86CA00B459FD /* Foundation.framework */,
+				8CF75ED8171B86CA00B459FD /* CoreGraphics.framework */,
+				8CF75EF8171B86CB00B459FD /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CF75EDA171B86CA00B459FD /* Spora */ = {
+			isa = PBXGroup;
+			children = (
+				8C7ACA011732FCC800B87FE1 /* Model */,
+				8C7ACA001732F6D200B87FE1 /* External Libraries */,
+				8CF75F0F171B8B6E00B459FD /* Core */,
+				8CF75EE3171B86CA00B459FD /* SPAppDelegate.h */,
+				8CF75EE4171B86CA00B459FD /* SPAppDelegate.m */,
+				8CF75EEC171B86CA00B459FD /* MainStoryboard.storyboard */,
+				8CF75EEF171B86CA00B459FD /* SPViewController.h */,
+				8CF75EF0171B86CA00B459FD /* SPViewController.m */,
+				8CF75EDB171B86CA00B459FD /* Supporting Files */,
+			);
+			path = Spora;
+			sourceTree = "<group>";
+		};
+		8CF75EDB171B86CA00B459FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CF75EDC171B86CA00B459FD /* Spora-Info.plist */,
+				8CF75EDD171B86CA00B459FD /* InfoPlist.strings */,
+				8CF75EE0171B86CA00B459FD /* main.m */,
+				8CF75EE2171B86CA00B459FD /* Spora-Prefix.pch */,
+				8CF75EE6171B86CA00B459FD /* Default.png */,
+				8CF75EE8171B86CA00B459FD /* Default@2x.png */,
+				8CF75EEA171B86CA00B459FD /* Default-568h@2x.png */,
+				8CF75F13171B8CDF00B459FD /* Globals.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CF75EFE171B86CB00B459FD /* SporaTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CF75F04171B86CB00B459FD /* SporaTests.h */,
+				8CF75F05171B86CB00B459FD /* SporaTests.m */,
+				8CF75EFF171B86CB00B459FD /* Supporting Files */,
+			);
+			path = SporaTests;
+			sourceTree = "<group>";
+		};
+		8CF75EFF171B86CB00B459FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CF75F00171B86CB00B459FD /* SporaTests-Info.plist */,
+				8CF75F01171B86CB00B459FD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CF75F0F171B8B6E00B459FD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8CF75F10171B8BB000B459FD /* SPConnectionManager.h */,
+				8CF75F11171B8BB000B459FD /* SPConnectionManager.m */,
+				8CF75F15171B8D6E00B459FD /* SPConstant.h */,
+				8CF75F16171B8D6E00B459FD /* SPConstant.m */,
+				8CB6D255171BA992008B6F2C /* SPLocationManager.h */,
+				8CB6D256171BA992008B6F2C /* SPLocationManager.m */,
+				8C7ACA08173317EF00B87FE1 /* SPJSONParser.h */,
+				8C7ACA09173317EF00B87FE1 /* SPJSONParser.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		8CF75F18171B90B500B459FD /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				8CF75F19171B90B500B459FD /* AFHTTPClient.h */,
+				8CF75F1A171B90B500B459FD /* AFHTTPClient.m */,
+				8CF75F1B171B90B500B459FD /* AFHTTPRequestOperation.h */,
+				8CF75F1C171B90B500B459FD /* AFHTTPRequestOperation.m */,
+				8CF75F1D171B90B500B459FD /* AFImageRequestOperation.h */,
+				8CF75F1E171B90B500B459FD /* AFImageRequestOperation.m */,
+				8CF75F1F171B90B500B459FD /* AFJSONRequestOperation.h */,
+				8CF75F20171B90B500B459FD /* AFJSONRequestOperation.m */,
+				8CF75F21171B90B500B459FD /* AFNetworkActivityIndicatorManager.h */,
+				8CF75F22171B90B500B459FD /* AFNetworkActivityIndicatorManager.m */,
+				8CF75F23171B90B500B459FD /* AFNetworking.h */,
+				8CF75F24171B90B500B459FD /* AFPropertyListRequestOperation.h */,
+				8CF75F25171B90B500B459FD /* AFPropertyListRequestOperation.m */,
+				8CF75F26171B90B500B459FD /* AFURLConnectionOperation.h */,
+				8CF75F27171B90B500B459FD /* AFURLConnectionOperation.m */,
+				8CF75F28171B90B500B459FD /* AFXMLRequestOperation.h */,
+				8CF75F29171B90B500B459FD /* AFXMLRequestOperation.m */,
+				8CF75F2A171B90B500B459FD /* UIImageView+AFNetworking.h */,
+				8CF75F2B171B90B500B459FD /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			path = ../AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CF75ED0171B86CA00B459FD /* Spora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF75F09171B86CB00B459FD /* Build configuration list for PBXNativeTarget "Spora" */;
+			buildPhases = (
+				8CF75ECD171B86CA00B459FD /* Sources */,
+				8CF75ECE171B86CA00B459FD /* Frameworks */,
+				8CF75ECF171B86CA00B459FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spora;
+			productName = Spora;
+			productReference = 8CF75ED1171B86CA00B459FD /* Spora.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CF75EF6171B86CB00B459FD /* SporaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF75F0C171B86CB00B459FD /* Build configuration list for PBXNativeTarget "SporaTests" */;
+			buildPhases = (
+				8CF75EF2171B86CB00B459FD /* Sources */,
+				8CF75EF3171B86CB00B459FD /* Frameworks */,
+				8CF75EF4171B86CB00B459FD /* Resources */,
+				8CF75EF5171B86CB00B459FD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CF75EFD171B86CB00B459FD /* PBXTargetDependency */,
+			);
+			name = SporaTests;
+			productName = SporaTests;
+			productReference = 8CF75EF7171B86CB00B459FD /* SporaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CF75EC9171B86CA00B459FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SP;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Fantsix;
+			};
+			buildConfigurationList = 8CF75ECC171B86CA00B459FD /* Build configuration list for PBXProject "Spora" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8CF75EC8171B86CA00B459FD;
+			productRefGroup = 8CF75ED2171B86CA00B459FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CF75ED0171B86CA00B459FD /* Spora */,
+				8CF75EF6171B86CB00B459FD /* SporaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CF75ECF171B86CA00B459FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF75EDF171B86CA00B459FD /* InfoPlist.strings in Resources */,
+				8CF75EE7171B86CA00B459FD /* Default.png in Resources */,
+				8CF75EE9171B86CA00B459FD /* Default@2x.png in Resources */,
+				8CF75EEB171B86CA00B459FD /* Default-568h@2x.png in Resources */,
+				8CF75EEE171B86CA00B459FD /* MainStoryboard.storyboard in Resources */,
+				8CF75F14171B8CDF00B459FD /* Globals.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF75EF4171B86CB00B459FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF75F03171B86CB00B459FD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CF75EF5171B86CB00B459FD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CF75ECD171B86CA00B459FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF75EE1171B86CA00B459FD /* main.m in Sources */,
+				8CF75EE5171B86CA00B459FD /* SPAppDelegate.m in Sources */,
+				8CF75EF1171B86CA00B459FD /* SPViewController.m in Sources */,
+				8CF75F12171B8BB000B459FD /* SPConnectionManager.m in Sources */,
+				8CF75F17171B8D6E00B459FD /* SPConstant.m in Sources */,
+				8CF75F2C171B90B500B459FD /* AFHTTPClient.m in Sources */,
+				8CF75F2E171B90B500B459FD /* AFHTTPRequestOperation.m in Sources */,
+				8CF75F30171B90B500B459FD /* AFImageRequestOperation.m in Sources */,
+				8CF75F32171B90B500B459FD /* AFJSONRequestOperation.m in Sources */,
+				8CF75F34171B90B500B459FD /* AFNetworkActivityIndicatorManager.m in Sources */,
+				8CF75F36171B90B500B459FD /* AFPropertyListRequestOperation.m in Sources */,
+				8CF75F38171B90B500B459FD /* AFURLConnectionOperation.m in Sources */,
+				8CF75F3A171B90B500B459FD /* AFXMLRequestOperation.m in Sources */,
+				8CF75F3C171B90B500B459FD /* UIImageView+AFNetworking.m in Sources */,
+				8CB6D257171BA992008B6F2C /* SPLocationManager.m in Sources */,
+				8C7ACA041733164200B87FE1 /* SPMessageList.m in Sources */,
+				8C7ACA071733167800B87FE1 /* SPMessage.m in Sources */,
+				8C7ACA0A173317EF00B87FE1 /* SPJSONParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF75EF2171B86CB00B459FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF75F06171B86CB00B459FD /* SporaTests.m in Sources */,
+				8CF75F2D171B90B500B459FD /* AFHTTPClient.m in Sources */,
+				8CF75F2F171B90B500B459FD /* AFHTTPRequestOperation.m in Sources */,
+				8CF75F31171B90B500B459FD /* AFImageRequestOperation.m in Sources */,
+				8CF75F33171B90B500B459FD /* AFJSONRequestOperation.m in Sources */,
+				8CF75F35171B90B500B459FD /* AFNetworkActivityIndicatorManager.m in Sources */,
+				8CF75F37171B90B500B459FD /* AFPropertyListRequestOperation.m in Sources */,
+				8CF75F39171B90B500B459FD /* AFURLConnectionOperation.m in Sources */,
+				8CF75F3B171B90B500B459FD /* AFXMLRequestOperation.m in Sources */,
+				8CF75F3D171B90B500B459FD /* UIImageView+AFNetworking.m in Sources */,
+				8CB6D258171BA992008B6F2C /* SPLocationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CF75EFD171B86CB00B459FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CF75ED0171B86CA00B459FD /* Spora */;
+			targetProxy = 8CF75EFC171B86CB00B459FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CF75EDD171B86CA00B459FD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CF75EDE171B86CA00B459FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8CF75EEC171B86CA00B459FD /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CF75EED171B86CA00B459FD /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		8CF75F01171B86CB00B459FD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CF75F02171B86CB00B459FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CF75F07171B86CB00B459FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8CF75F08171B86CB00B459FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CF75F0A171B86CB00B459FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spora/Spora-Prefix.pch";
+				INFOPLIST_FILE = "Spora/Spora-Info.plist";
+				PRODUCT_NAME = Spora;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8CF75F0B171B86CB00B459FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spora/Spora-Prefix.pch";
+				INFOPLIST_FILE = "Spora/Spora-Info.plist";
+				PRODUCT_NAME = Spora;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8CF75F0D171B86CB00B459FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Spora.app/Spora";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spora/Spora-Prefix.pch";
+				INFOPLIST_FILE = "SporaTests/SporaTests-Info.plist";
+				PRODUCT_NAME = SporaTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8CF75F0E171B86CB00B459FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Spora.app/Spora";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spora/Spora-Prefix.pch";
+				INFOPLIST_FILE = "SporaTests/SporaTests-Info.plist";
+				PRODUCT_NAME = SporaTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CF75ECC171B86CA00B459FD /* Build configuration list for PBXProject "Spora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF75F07171B86CB00B459FD /* Debug */,
+				8CF75F08171B86CB00B459FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CF75F09171B86CB00B459FD /* Build configuration list for PBXNativeTarget "Spora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF75F0A171B86CB00B459FD /* Debug */,
+				8CF75F0B171B86CB00B459FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CF75F0C171B86CB00B459FD /* Build configuration list for PBXNativeTarget "SporaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF75F0D171B86CB00B459FD /* Debug */,
+				8CF75F0E171B86CB00B459FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CF75EC9171B86CA00B459FD /* Project object */;
+}
